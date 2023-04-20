@@ -16,10 +16,9 @@ app.use(
 app.use(bodyParser.json())
 app.use(cors())
 app.use('/api/v1', bookRoutes)
-// MONGODB_URI=mongodb+srv://senariuss:mongodb159753@cluster0.afou67u.mongodb.net/app1db?retryWrites=true&w=majority
 
 // const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.afou67u.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
-const uri: string = `mongodb+srv://senariuss:mongodb159753@cluster0.afou67u.mongodb.net/app1db?retryWrites=true&w=majority`
+const uri: string = `mongodb+srv://senariuss:67khun4F5TsbCyeL@cluster0.afou67u.mongodb.net/app1db?retryWrites=true&w=majority`
 
 mongoose
   .connect(uri)
