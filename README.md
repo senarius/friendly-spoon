@@ -108,11 +108,11 @@ https://documenter.getpostman.com/view/8474302/SVfGyBSu
 
 ### API Resources
   - [GET /books](#get-books)
-  - [POST /add-book](#post-book)
-  - [PUT /edit-book/:id](#put-bookbookId)
-  - [DELETE /delete-book/:id](#delete-commentbookId)
+  - [POST /add-book](#post-add-book)
+  - [PUT /edit-book/:id](#put-edit-bookbookId)
+  - [DELETE /delete-book/:id](#delete-bookbookId)
   - [GET /comments](#get-comments)
-  - [POST /add-comment](#post-comment)
+  - [POST /add-comment](#post-add-comment)
   - [DELETE /delete-comment/:id](#delete-commentbookId)
 
 ### GET /books
