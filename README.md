@@ -23,7 +23,6 @@ RESTful API Designed in Node.js for a very simple BOOKS application.
 2. Install the application: `yarn install`
 3. Place your own MongoDB URI in `credentials/mongo.js` unto Rename `sanple.env` file to `.env` and update `DB_URL`
 4. Start the server on development: `yarn dev`
-5. Open PostMan and make a `GET` request to `http://localhost:4000/api/info/`
 
 ## Schema
 
@@ -43,7 +42,7 @@ There are no authentication implemented yet. So, all the end-points are open.
 `Commnet` object represents snapshot of a specific Comment with a unique Id. You can retrieve it to see details about the Book remarks.
 
 #### Schema
-```javascript
+```
 {
 	book: {
     title: {
@@ -86,7 +85,7 @@ There are no authentication implemented yet. So, all the end-points are open.
 			updateAt: {
 				type: Date,
 				default: Date.now
-		}
+			}
     }
 	}
 }
@@ -112,6 +111,7 @@ https://documenter.getpostman.com/view/8474302/SVfGyBSu
   - [POST /add-book](#post-book)
   - [PUT /edit-book/:id](#put-bookbookId)
   - [DELETE /delete-book/:id](#delete-commentbookId)
+	
 	- [GET /comments](#get-comments)
 	- [POST /add-comment](#post-comment)
 	- [DELETE /delete-comment/:id](#delete-commentbookId)
