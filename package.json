@@ -7,7 +7,7 @@
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
     "start": "node dist/js/app.js",
     "build": "tsc",
-    "test": "export NODE_ENV=TEST && jest --coverage"
+    "test": "export NODE_ENV=test && jest --coverage"
   },
   "keywords": [],
   "author": "",

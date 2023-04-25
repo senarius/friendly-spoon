@@ -8,7 +8,6 @@ RESTful API Designed in Node.js for a very simple BOOKS application.
 * [Authentication](#authentication)
 * [Root End-Point](#root-end-point)
 * [Core Resources](#core-resources)
-* [Documentation](#documentation)
 * [Request & Response Examples](#request--response-examples)
 
 ## Requirements
@@ -23,6 +22,7 @@ RESTful API Designed in Node.js for a very simple BOOKS application.
 2. Install the application: `yarn install`
 3. Place your own MongoDB URI in `credentials/mongo.js` unto Rename `sanple.env` file to `.env` and update `DB_URL`
 4. Start the server on development: `yarn dev`
+5. Execute test and test coverage: `yarn test`
 
 ## Schema
 
@@ -100,9 +100,6 @@ There are no authentication implemented yet. So, all the end-points are open.
 | `GET` | `/comments` | List all *comments* |
 | `POST` | `/add-comment` | Create a new *comment* |
 | `DELETE` | `/delete-comment/:id` | Delete existing *comment* |
-
-## Documentation
-https://documenter.getpostman.com/view/8474302/SVfGyBSu
 
 ## Request & Response Examples
 

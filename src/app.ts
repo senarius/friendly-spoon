@@ -16,7 +16,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/api/v1', bookRoutes)
 
-if (process.env.NODE_ENV === 'DEV' || process.env.NODE_ENV === 'PRODUCTION') {
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'production') {
   Database.getInstance()
 }
 
