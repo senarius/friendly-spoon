@@ -1,12 +1,11 @@
-import express, { Express } from 'express'
+import express, { Express, Request, Response } from 'express'
 import mongoose from 'mongoose'
 import cors from 'cors'
 import bookRoutes from './routes'
 import bodyParser from 'body-parser'
+import Database from './db'
 
 const app: Express = express()
-
-const PORT: string | number = process.env.PORT || 4000
 
 app.use(
   bodyParser.urlencoded({
@@ -17,18 +16,12 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use('/api/v1', bookRoutes)
 
-// const uri: string = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.afou67u.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`
-const uri: string = `mongodb+srv://senariuss:67khun4F5TsbCyeL@cluster0.afou67u.mongodb.net/app1db?retryWrites=true&w=majority`
+if (process.env.NODE_ENV === 'DEV' || process.env.NODE_ENV === 'PRODUCTION') {
+  Database.getInstance()
+}
 
-mongoose
-  .connect(uri)
-  .then(() =>
-    app.listen(PORT, () =>
-      console.log(`Server running on http://localhost:${PORT}`)
-    )
-  )
-  .catch((error) => {
-    throw error
-  })
+app.get('/', async (req: Request, res: Response): Promise<Response> => {
+  return res.status(200).send({message: 'Hello World!'})
+})
 
 export default app

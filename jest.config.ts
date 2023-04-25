@@ -3,7 +3,7 @@ export default {
   coverageProvider: "v8",
   moduleFileExtensions: ["js", "jsx", "ts", "tsx", "json", "node"],
 
-  roots: ["<rootDir>/src"],
+  roots: ["<rootDir>/src", "<rootDir>/tests"],
 
   testMatch: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[tj]s?(x)"],
   transform: {

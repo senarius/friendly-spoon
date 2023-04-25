@@ -26,6 +26,7 @@ const addBook = async (req: Request, res: Response): Promise<void> => {
 
     res.status(201).json({ message: 'Book added', book: newBook, books: allBooks })
   } catch (error) {
+    console.log(error)
     throw error
   }
 }
