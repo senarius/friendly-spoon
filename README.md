@@ -111,10 +111,9 @@ https://documenter.getpostman.com/view/8474302/SVfGyBSu
   - [POST /add-book](#post-book)
   - [PUT /edit-book/:id](#put-bookbookId)
   - [DELETE /delete-book/:id](#delete-commentbookId)
-	
-	- [GET /comments](#get-comments)
-	- [POST /add-comment](#post-comment)
-	- [DELETE /delete-comment/:id](#delete-commentbookId)
+  - [GET /comments](#get-comments)
+  - [POST /add-comment](#post-comment)
+  - [DELETE /delete-comment/:id](#delete-commentbookId)
 
 ### GET /books
 To get the list of all *books*
