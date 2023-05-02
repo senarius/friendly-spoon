@@ -42,7 +42,7 @@ There are no authentication implemented yet. So, all the end-points are open.
 `Commnet` object represents snapshot of a specific Comment with a unique Id. You can retrieve it to see details about the Book remarks.
 
 #### Schema
-```
+```javascript
 {
 	book: {
     title: {
